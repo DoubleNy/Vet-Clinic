@@ -7,3 +7,8 @@ npm-debug.log
 # Environment Variables should NEVER be published
 .env
 config.json
+
+.idea
+.gitignore
+
+client/.idea

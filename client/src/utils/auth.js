@@ -33,4 +33,16 @@ const logout = () => {
         });
 };
 
-export { signup, login, logout };
+const getUnreadMessages = () => {
+    return axios
+        .get('/api/messages/unread')
+        .then((response) => {
+            return response.data;
+        })
+        .catch((err) => {
+            return err.response.data;
+        });
+};
+
+
+export { signup, login, logout, getUnreadMessages };

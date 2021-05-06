@@ -17,11 +17,21 @@ import MessagesList from './Components/Messages/MessagesList/MessagesList';
 import MessageDetails from './Components/Messages/MessageDetails/MessageDetails';
 import GoogleScheduler from './Components/Scheduler/GoogleScheduler';
 import ProtectedRoute from './utils/ProtectedRoute';
+import {getUnreadMessages} from "./utils/auth";
 
 function App(props) {
     // console.log('props', props.user);
     const [user, setUser] = useState(props.user || '');
-    console.log('user', user);
+
+    const [unreadMessages, setUnreadMessages] = useState(0);
+
+    useEffect(() => {
+        setInterval(() => getUnreadMessages().then((data) => {
+            setUnreadMessages(data.unread ?? 0)
+        }), 5000);
+    }, [])
+
+    // console.log('user', user);
 
     // Show text in the header if screen > 660px
     const [width, setWidth] = useState(window.innerWidth);
@@ -70,6 +80,7 @@ function App(props) {
                         isEmployee={isEmployee}
                         setUser={setUser}
                         user={user}
+                        unreadMessages={unreadMessages}
                     />
                 )}
             />
@@ -78,7 +89,7 @@ function App(props) {
                     exact
                     path="/"
                     render={(props) => (
-                        <Home {...props} user={user} width={width} />
+                        <Home {...props} user={user} width={width}  />
                     )}
                 />
                 <Route

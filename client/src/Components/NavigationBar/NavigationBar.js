@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React, {useRef} from 'react';
 import style from './NavigationBar.module.css';
 import { Link } from 'react-router-dom';
-import { logout } from '../../utils/auth';
+import { logout} from '../../utils/auth';
 import Login from '../Auth/Login/Login';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
@@ -90,6 +90,7 @@ const NavigationBar = (props) => {
                                                     to="/messages"
                                                 >
                                                     Messages
+                                                    {props.unreadMessages ? <span style={{color: 'red', font: 'bold'}}>{`(${props.unreadMessages} new)`}</span> : null}
                                                 </Link>
                                             </div>
                                         </>
