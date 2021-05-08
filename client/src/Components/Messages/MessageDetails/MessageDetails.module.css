@@ -4,14 +4,14 @@
     align-items: flex-start;
     justify-content: space-around;
     border: 2px solid #eee;
-    border-radius: 20px;
     box-sizing: border-box;
-    margin: 5% 0;
-    padding: 10% 10% 5% 10%;
-    width: 60vw;
-    background-color: rgb(194, 127, 50);
-    color: rgb(72, 50, 105);
-    padding: 10% 5%;
+    margin: 5rem 0;
+    border-radius: 5rem;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    width: 90%;
+    background-color: #96616B;
+    color: white;
+    font-weight: 600;
 }
 .Infos {
     display: flex;
@@ -28,8 +28,10 @@
     /* margin: 5% 0; */
 }
 .Card button {
-    background: none;
-    color: #eee;
+    background: #5863F8;
+    font-weight: 700;
+    color: white;
+    padding: 0.5rem;
     border: none;
     cursor: pointer;
 }

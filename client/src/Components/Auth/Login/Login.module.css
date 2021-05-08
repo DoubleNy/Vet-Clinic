@@ -1,6 +1,6 @@
 .Button {
     background: none;
-    color: rgb(48, 153, 228);
+    color: #96616B;
     border: none;
     cursor: pointer;
 }
@@ -19,6 +19,7 @@
 }
 Form a {
     margin: 0 1% 0 1%;
+    color: #96616B;
 }
 .Form p {
     color: #fff;
@@ -34,7 +35,7 @@ Form a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(194, 127, 50);
+    background-color: #96616B;
     border: none;
 }
 @media only screen and (max-width: 620px) {

@@ -5,15 +5,15 @@
     justify-content: space-around;
     font-size: 1em;
     border: 2px solid #eee;
-    border-radius: 20px;
+    border-radius: 5rem;
     box-sizing: border-box;
-    margin: 10% 0;
-    padding: 5% 0;
+    margin: 5rem 0;
+    padding: 2.5rem;
     width: 80vw;
     height: auto;
-    background-color: rgb(194, 127, 50);
-    color: rgb(72, 50, 105);
-    padding: 10% 10%;
+    background-color: #96616B;
+    color: white;
+    font-weight: 600;
 }
 
 .Infos {
@@ -30,31 +30,21 @@
     margin-top: 5rem;
 }
 .Card button {
-    background: none;
-    color: #eee;
+    background: #5863F8;
+    font-weight: 700;
+    color: white;
+
     border: none;
     cursor: pointer;
 }
 .Card h3 {
     padding: 5% 0;
 }
-/* .Card a {
-    color: rgb(72, 50, 105);
-    width: 200px;
-}
-.Card span {
-    color: rgb(72, 50, 105);
-    cursor: pointer;
-} */
-/* .Card span:nth-child(1) {
-    font-size: 3em;
-    font-weight: bold;
-    width: 100%;
-} */
+
 .Card .TextBox {
     width: 100%;
     min-height: 20%;
     max-height: 10rem;
     overflow-y: auto;
-    border-bottom: 3px solid rgb(72, 50, 105);
+    border-bottom: 1px dashed white;
 }
